@@ -7,7 +7,7 @@ description: Human-Machine iNteraction Laboratory, Department of Mechanical Engi
 #   • 사용자/조직 사이트 (username.github.io)  →  baseurl: ""
 #   • 프로젝트 사이트 (username.github.io/repo) →  baseurl: "/repo"
 # ─────────────────────────────────────────────────────────────
-baseurl: ""
+baseurl: "/human-lab"
 url: ""
 
 lab:
