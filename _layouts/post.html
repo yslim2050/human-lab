@@ -1,0 +1,45 @@
+---
+layout: default
+---
+{%- assign backmap = "notice:/notice/|news:/awards/|projects:/projects/|consulting:/consulting/|lectures:/lab-intro/lectures/|gallery:/lab-intro/gallery/" -%}
+{%- assign backurl = "/" -%}
+{%- assign pairs = backmap | split: "|" -%}
+{%- for pair in pairs -%}
+  {%- assign kv = pair | split: ":" -%}
+  {%- if kv[0] == page.board -%}{%- assign backurl = kv[1] -%}{%- endif -%}
+{%- endfor -%}
+
+<div class="wrap">
+  <div class="sub-wrap">
+
+    {% include sidebar.html %}
+
+    <div class="content" id="content">
+
+      <div class="content-head">
+        <h1 class="content-title">{{ page.list_title | default: page.tab }}</h1>
+        <div class="crumb">
+          <a href="{{ '/' | relative_url }}" class="home" aria-label="HOME">&#8962;</a>
+          <span>{{ page.tab }}</span>
+          <span>&gt;</span>
+          <span>{{ page.list_title | default: page.title }}</span>
+        </div>
+      </div>
+
+      <div class="post-head">
+        <h2>{{ page.title }}</h2>
+        <div class="post-meta">
+          {{ page.writer | default: "관리자" }} &nbsp;|&nbsp; {{ page.date | date: "%Y.%m.%d" }}
+        </div>
+      </div>
+
+      <div class="post-body">
+        {{ content }}
+      </div>
+
+      <a href="{{ backurl | relative_url }}" class="btn-list">목록</a>
+
+    </div>
+
+  </div>
+</div>

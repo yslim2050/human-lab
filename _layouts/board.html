@@ -1,0 +1,62 @@
+---
+layout: page
+---
+{{ content }}
+
+{%- assign posts = site[page.board] | sort: "date" | reverse -%}
+{%- assign total = posts | size -%}
+
+<table class="board" id="board-table">
+  <caption class="skip">{{ page.title }} 목록</caption>
+  <colgroup>
+    <col class="col-no"><col><col class="col-writer"><col class="col-date"><col class="col-hit">
+  </colgroup>
+  <thead>
+    <tr>
+      <th scope="col">번호</th>
+      <th scope="col">제목</th>
+      <th scope="col">글쓴이</th>
+      <th scope="col">날짜</th>
+      <th scope="col">조회</th>
+    </tr>
+  </thead>
+  <tbody>
+    {%- if total == 0 -%}
+    <tr><td colspan="5" class="empty">등록된 게시물이 없습니다.</td></tr>
+    {%- else -%}
+      {%- for p in posts -%}
+      <tr>
+        <td>{{ total | minus: forloop.index | plus: 1 }}</td>
+        <td class="subject"><a href="{{ p.url | relative_url }}">{{ p.title }}</a></td>
+        <td>{{ p.writer | default: "관리자" }}</td>
+        <td>{{ p.date | date: "%Y.%m.%d" }}</td>
+        <td>{{ p.hit | default: "-" }}</td>
+      </tr>
+      {%- endfor -%}
+    {%- endif -%}
+  </tbody>
+</table>
+
+<div class="board-tools">
+  <div class="board-search">
+    <label class="skip" for="board-q">제목 검색</label>
+    <input type="search" id="board-q" placeholder="제목으로 검색">
+    <button type="button" id="board-go">검색</button>
+  </div>
+</div>
+
+<script>
+(function () {
+  var q = document.getElementById('board-q');
+  var rows = document.querySelectorAll('#board-table tbody tr');
+  function run() {
+    var v = q.value.trim().toLowerCase();
+    rows.forEach(function (r) {
+      var c = r.querySelector('.subject');
+      r.style.display = (!v || (c && c.textContent.toLowerCase().indexOf(v) > -1)) ? '' : 'none';
+    });
+  }
+  q.addEventListener('input', run);
+  document.getElementById('board-go').addEventListener('click', run);
+})();
+</script>

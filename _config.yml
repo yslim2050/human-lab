@@ -1,0 +1,59 @@
+title: HUMAN LAB
+subtitle: Human-Machine iNteraction
+description: Human-Machine iNteraction Laboratory, Department of Mechanical Engineering, KAIST
+
+# ─────────────────────────────────────────────────────────────
+# GitHub Pages 배포 설정
+#   • 사용자/조직 사이트 (username.github.io)  →  baseurl: ""
+#   • 프로젝트 사이트 (username.github.io/repo) →  baseurl: "/repo"
+# ─────────────────────────────────────────────────────────────
+baseurl: ""
+url: ""
+
+lab:
+  address_en: "(34141) KAIST, 291 Daehak-ro, Yuseong-gu, Daejeon, Republic of Korea"
+  room: "Room #4107, N7-4 of Mechanical Engineering Building"
+  tel: "042-350-3235"
+  tel_student: "+82-42-350-5235"
+  email: "yhpark@kaist.ac.kr"
+  since: 2016
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# 게시판 컬렉션 — 각 폴더에 .md 파일을 추가하면 자동으로 목록에 올라갑니다.
+collections:
+  notice:
+    output: true
+  news:
+    output: true
+  projects:
+    output: true
+  consulting:
+    output: true
+  lectures:
+    output: true
+  gallery:
+    output: true
+
+defaults:
+  - scope: { path: "", type: "notice" }
+    values: { layout: "post", board: "notice", tab: "Awards", list_title: "Notice" }
+  - scope: { path: "", type: "news" }
+    values: { layout: "post", board: "news", tab: "Awards", list_title: "Awards" }
+  - scope: { path: "", type: "projects" }
+    values: { layout: "post", board: "projects", tab: "Projects", list_title: "Projects" }
+  - scope: { path: "", type: "consulting" }
+    values: { layout: "post", board: "consulting", tab: "Projects", list_title: "Consulting" }
+  - scope: { path: "", type: "lectures" }
+    values: { layout: "post", board: "lectures", tab: "Lab Intro", list_title: "Lectures" }
+  - scope: { path: "", type: "gallery" }
+    values: { layout: "post", board: "gallery", tab: "Lab Intro", list_title: "Gallery" }
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

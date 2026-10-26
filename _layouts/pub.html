@@ -1,0 +1,30 @@
+---
+layout: page
+---
+{%- assign pubtab = nil -%}
+{%- for tab in site.data.nav -%}
+  {%- if tab.title == "Publications" -%}{%- assign pubtab = tab -%}{%- endif -%}
+{%- endfor -%}
+
+<ul class="pub-tabs">
+  {%- for item in pubtab.items -%}
+  <li class="{% if page.url == item.url %}on{% endif %}">
+    <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+  </li>
+  {%- endfor -%}
+</ul>
+
+{%- assign entries = site.data.publications[page.pubkey] -%}
+{%- if entries and entries.size > 0 -%}
+<ul class="pub-list">
+  {%- for e in entries -%}
+  <li>{{ e }}</li>
+  {%- endfor -%}
+</ul>
+{%- else -%}
+<ul class="pub-list">
+  <li style="text-align:center;padding:50px 0;">등록된 항목이 없습니다. <code>_data/publications.yml</code> 에 추가하세요.</li>
+</ul>
+{%- endif -%}
+
+{{ content }}

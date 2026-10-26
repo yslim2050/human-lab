@@ -1,0 +1,63 @@
+# ───────────────────────────────────────────────────────────
+# 상단 메뉴 구조. 여기만 고치면 GNB·좌측 서브메뉴가 함께 바뀝니다.
+#   title : 탭 이름
+#   url   : 대표(첫) 페이지 주소
+#   items : 하위 메뉴 (없으면 단일 탭)
+# ───────────────────────────────────────────────────────────
+- title: Lab Intro
+  url: /lab-intro/overview/
+  items:
+    - { title: "Overview",                 url: "/lab-intro/overview/" }
+    - { title: "Research Topics (Video)",  url: "/lab-intro/research-video/" }
+    - { title: "Research Topics (PDF)",    url: "/lab-intro/research-pdf/" }
+    - { title: "Lectures",                 url: "/lab-intro/lectures/" }
+    - { title: "Full CV",                  url: "/lab-intro/full-cv/" }
+    - { title: "Contact Us",               url: "/lab-intro/contact/" }
+    - { title: "Gallery",                  url: "/lab-intro/gallery/" }
+
+- title: Members
+  url: /members/professor/
+  items:
+    - { title: "Professor",         url: "/members/professor/" }
+    - { title: "Researcher",        url: "/members/researcher/" }
+    - { title: "Ph.D. Candidates",  url: "/members/phd/" }
+    - { title: "Master Candidates", url: "/members/master/" }
+    - { title: "Alumni",            url: "/members/alumni/" }
+    - { title: "Staff",             url: "/members/staff/" }
+
+- title: Research
+  url: /research/vibration/
+  items:
+    - { title: "Vibration Analysis & Condition Monitoring",   url: "/research/vibration/" }
+    - { title: "Prognostics and Health Management",           url: "/research/phm/" }
+    - { title: "Auditory Intelligence & Acoustic Recognition", url: "/research/auditory/" }
+    - { title: "Human Vibration & Health Sensors",            url: "/research/human-vibration/" }
+    - { title: "3D Scene Recognition",                        url: "/research/3d-scene/" }
+
+- title: M.S. Thesis
+  url: /ms-thesis/
+
+- title: Ph.D. Dissertation
+  url: /phd-dissertation/
+
+- title: Publications
+  url: /publications/international-journal/
+  items:
+    - { title: "International Journal",      url: "/publications/international-journal/" }
+    - { title: "International Conference",   url: "/publications/international-conference/" }
+    - { title: "Domestic Journal",           url: "/publications/domestic-journal/" }
+    - { title: "Domestic Conference",        url: "/publications/domestic-conference/" }
+    - { title: "Invited Journal Articles",   url: "/publications/invited/" }
+    - { title: "Patents",                    url: "/publications/patents/" }
+
+- title: Projects
+  url: /projects/
+  items:
+    - { title: "Projects",   url: "/projects/" }
+    - { title: "Consulting", url: "/consulting/" }
+
+- title: Awards
+  url: /awards/
+  items:
+    - { title: "Awards", url: "/awards/" }
+    - { title: "Notice", url: "/notice/" }

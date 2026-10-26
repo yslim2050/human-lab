@@ -1,0 +1,40 @@
+<div class="sitelink">
+  <div class="wrap">
+    <h2>SITE LINK</h2>
+    <ul>
+      <li><a href="https://kaist.ac.kr/kr/" target="_blank" rel="noopener">KAIST</a></li>
+      <li><a href="https://me.kaist.ac.kr/" target="_blank" rel="noopener">KAIST Mechanical Engineering</a></li>
+      <li><a href="https://novic.kaist.ac.kr/" target="_blank" rel="noopener">NOVIC<sup>+</sup></a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="wrap">
+    <a href="{{ '/' | relative_url }}" class="foot-logo">
+      <span class="k">KAIST</span>
+      <span class="t">HUMAN-MACHINE<br>INTERACTION LAB</span>
+    </a>
+    <div class="foot-info">
+      {{ site.lab.address_en }}
+      Tel : {{ site.lab.tel }}, e-mail: <a href="mailto:{{ site.lab.email }}">{{ site.lab.email }}</a><br>
+      Copyright (c) {{ site.lab.since }} HUMAN LAB All Rights Reserved.
+    </div>
+  </div>
+</div>
+
+<script>
+/* 방문자 카운터 — 원본의 Today/Total 표시를 로컬 기준으로 대체합니다.
+   실제 집계가 필요하면 GoatCounter·Google Analytics 등으로 교체하세요. */
+(function () {
+  try {
+    var k = 'hl-visits', d = new Date().toISOString().slice(0, 10);
+    var s = JSON.parse(localStorage.getItem(k) || '{"d":"","t":0,"all":0}');
+    if (s.d !== d) { s.d = d; s.t = 0; }
+    s.t += 1; s.all += 1;
+    localStorage.setItem(k, JSON.stringify(s));
+    document.getElementById('cnt-today').textContent = s.t;
+    document.getElementById('cnt-total').textContent = s.all.toLocaleString();
+  } catch (e) { /* 저장소 차단 시 무시 */ }
+})();
+</script>

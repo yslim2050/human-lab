@@ -1,0 +1,14 @@
+---
+layout: page
+tab: Ph.D. Dissertation
+title: Ph.D. Dissertation
+permalink: /phd-dissertation/
+---
+
+<ul class="pub-list" style="border-top:2px solid var(--navy);">
+  {%- for e in site.data.publications.phd_dissertation -%}
+  <li>{{ e }}</li>
+  {%- else -%}
+  <li style="text-align:center;padding:50px 0;">등록된 항목이 없습니다.</li>
+  {%- endfor -%}
+</ul>

@@ -1,0 +1,62 @@
+# ───────────────────────────────────────────────────────────
+# 논문·특허 목록. 각 항목은 한 줄 문자열이며 HTML 태그를 쓸 수 있습니다.
+# 새 항목은 해당 그룹 맨 위에 추가하세요 (최신순 정렬).
+# <strong></strong> 로 저자·등재 정보를 강조할 수 있습니다.
+# ───────────────────────────────────────────────────────────
+
+international_journal:
+  - 'Junki Hong, Bomi Lee, Adelle Ria Persad, Hyunwoo Song, Changhee Min, Jae-Hak Jeong, Alireza Doostan, <strong>Yong-Hwa Park</strong> (2026). Computer Methods and Programs in Biomedicine, 280, 109311. <strong>(SCIE, IF 4.8)</strong>'
+  - 'Jeongmin Kim, Jin Kim, Manhee Cho, Yeonghwan Kim, Bong-gook Kang, <strong>Yong-Hwa Park</strong> (2026). Three-dimensional measurement of ship blocks using a multi-vision system with weighted generic calibration, Ocean Engineering, 346, 123845. <strong>(SCIE, IF 5.5)</strong>'
+  - 'K.C. Park, J.A. Gonzaelez, S.J. Shin, S.H. Kang, M.H. Hwang, J.G. Kim, M.F. Baqir, J.H. Hang, R.W. Hagos, S.C. Lee, <strong>Y.H. Park</strong>, H.J. Kim, K.K. Maute, C.A. Felippa (2026). Solving FEM models without assembly: Its promise and challenge, Computer Methods in Applied Mechanics and Engineering, 450, 118588. <strong>(SCIE, IF 7.8)</strong>'
+  - 'Wonjun Yi, Wonho Jung, Hyeonuk Nam, Kangmin Jang, <strong>Yong-Hwa Park</strong> (2026). Multi-output classification using a cross-talk architecture for compound fault diagnosis of motors in partially labeled condition, Mechanical Systems and Signal Processing, 244, 113786. <strong>(SCIE, IF 8.9)</strong>'
+  - 'Wonho Jung, Junho Kim, Kangmin Jang, Sung-Hyun Yun, Daeguen Lim, Minje Jin, <strong>Yong-Hwa Park</strong> (2025). Vibration, current, torque, RPM dataset for multiple fault conditions in industrial-scale electric motors under randomized speed and load variations, Data in Brief, 62, 111954. <strong>(SCIE, IF 1.4)</strong>'
+
+international_conference:
+  - 'Jung, Wonho, Kim, JunHo, Yang, Chanseung, Kim, Jaewan, &amp; <strong>Park, Yong-Hwa</strong> (2025, October). Transfer Learning Based Motor Fault Diagnosis Using Motor Current Signals Robust to Speed, Load, and Capacity Variations, 51st Annual Conference of the IEEE Industrial Electronics Society (IECON), Madrid, Spain.'
+  - 'Kim, HyeonJun, <strong>Park, Yong-Hwa</strong>, Park, Kwang-Chun, Jo, Sang-Soon (2025, September). A Model-Based Localized Damage Detection in Structural Health Monitoring, The 15th International Workshop on Structural Health Monitoring, Stanford University, CA, USA.'
+  - 'Persad, Adelle Ria, Lee, Bomi, Hong, Junki, Song, HyunWoo, Jeong, Jae-Hak, &amp; <strong>Park, Yong-Hwa</strong> (2025, July). Parametric Study of Cardiovascular Parameter Influence on PPG-to-CBP Signal Conversion, 47th Annual International Conference of the IEEE Engineering in Medicine &amp; Biology Society (EMBC), Copenhagen, Denmark.'
+  - 'Lee, Bomi, Hong, Junki, Persad, Adelle Ria, Song, HyunWoo, Jeong, Jae-Hak, &amp; <strong>Park, Yong-Hwa</strong> (2025, July). Systemic Analysis of Blood Pressure Waveform Features Using a Cardiovascular Simulator: Implications for Non-invasive Vascular Health Monitoring, 47th Annual International Conference of the IEEE Engineering in Medicine &amp; Biology Society (EMBC), Copenhagen, Denmark.'
+  - 'Hong, Junki, Lee, Bomi, Persad, Adelle Ria, Min, ChangHee, Jeong, Jae-Hak, &amp; <strong>Park, Yong-Hwa</strong> (2025, July). Effect of Heart Rate on Arterial Pressure Wave Propagation: Analysis Using Cardiovascular Hardware Simulator, 47th Annual International Conference of the IEEE Engineering in Medicine &amp; Biology Society (EMBC), Copenhagen, Denmark.'
+
+domestic_journal:
+  - 'Junki Hong, Jae-Hak Jeong, Bomi Lee, Changhee Min, <strong>Yong-Hwa Park</strong>, "Reproduction of Pressure Wave Propagation in the Abdominal Aorta using a Hemodynamic-based 1-D Flow Model," <em>Transactions of the Korean Society for Noise and Vibration Engineering (KSNVE), Vol. 34, No. 4, 2024.08, pp. 369-373</em>'
+  - 'Jae-Hak Jeong, <strong>Yong-Hwa Park</strong>, "Reproducing Central-brachial Blood Pressure Waveforms using a Cardiovascular Simulator," <em>Transactions of the Korean Society for Noise and Vibration Engineering (KSNVE), Vol. 34, No. 3, 2024.06, pp. 295-301</em>'
+  - 'Jae-Hak Jeong, <strong>Yong-Hwa Park</strong>, "Mock Circulatory Robot with Artificial Aorta for Reproduction of Blood Pressure Waveform," <em>The Journal of Korea Robotics Society, Vol. 19, No. 2, 2024.04, pp. 221-228</em>'
+  - 'Hong Junki, Jeong Jae-Hak, Lee Bomi, Changhee Min, <strong>Yong-Hwa Park</strong>, "Estimation of Aortic Pressure Waveform via Dynamic System Modeling between Aortic Pressure and Cuff Oscillometric Signal," <em>Transactions of the Korean Society of Mechanical Engineers A, Vol. 48, No. 4, 2024.04, pp. 285-288</em>'
+  - 'Jae-Hak Jeong, Bomi Lee, Junki Hong, Changhee Min, <strong>Yong-Hwa Park</strong>, "A Cardiovascular Simulator for the Reproduction of Blood Pressure Waveform and Magnitude," <em>Journal of the Korean Society of Mechanical Engineers A, Vol. 47, No. 8, 2023, pp. 627-633</em>'
+
+domestic_conference:
+  - '김현준, 이원준, 장강민, <strong>박용화</strong>, "C-GIS의 기계적 결함 진단을 위한 진동계측 및 진단 알고리즘 개발", 2025년도 추계 소음진동 학술대회, 경주 라한셀렉트호텔, 2025.11.28'
+  - '<strong>박용화</strong>, 정원호, 임대근, 김진, 최승덕, "비전/진동/음향 기반 멀티모달 상태진단 최신기술", 2025년도 추계 소음진동 학술대회, 경주 라한셀렉트호텔, 2025.11.27'
+  - '장강민, 임대근, 김현준, <strong>박용화</strong>, "물리정보 심층 연산자 네트워크를 이용한 구조물의 모드해석", 2025년도 추계 소음진동 학술대회, 경주 라한셀렉트호텔, 2025.11.27'
+  - '임대근, 정원호, 김준호, <strong>박용화</strong>, "구조 동역학 시간 응답 예측을 위한 심층 연산자 신경망 기반 생성 모델", 2025년도 추계 소음진동 학술대회, 경주 라한셀렉트호텔, 2025.11.27'
+  - '송현우, 이보미, Persad Adelle Ria, 홍준기, 송유리, 정재학, <strong>박용화</strong>, "맥파 전파 특성 기반 중심동맥압 추정 물리지식 네트워크", 2025년도 추계 소음진동 학술대회, 경주 라한셀렉트호텔, 2025.11.26'
+  - '홍준기, 이보미, Persad Adelle Ria, 송현우, 송유리, 정재학, <strong>박용화</strong>, "혈류역학 모델의 실험적 검증과 압력 전파 분석", 2025년도 추계 소음진동 학술대회, 경주 라한셀렉트호텔, 2025.11.26'
+  - '<strong>박용화</strong>, "진동해석과 생성형 AI 결합을 통한 원자력 구조물의 상태 진단", 2025년도 추계 소음진동 학술대회, 경주 라한셀렉트호텔, 2025.11.26'
+
+invited: []
+
+patents:
+  - '<strong>박용화</strong>, 정원호, 정성진, "게임데이터 학습 딥러닝 기반 소형 객체 탐지 방법 및 장치", Pat.No. 10-2878352-0000 (2025.10.24), 대한민국'
+  - '<strong>박용화</strong>, 이경태, 남현욱, 김성후, 김영기, 김인권, 이광현, 이재선, 박성효, "Deep learning-based cough recognition method and device", Pat.No. 12156727 (2024.12.03), 미국'
+  - '<strong>박용화</strong>, "전차 동력 장치의 고장 진단 시스템, 방법 및 프로그램", Pat.No. 10-2723564-0000 (2024.10.24), 대한민국'
+  - '<strong>박용화</strong>, 김성후, "시계열 데이터 적응형 컨볼루션 기반 딥러닝 모델을 이용한 화자 인식 방법", Pat.No. 10-2709590-0000 (2024.09.20), 대한민국'
+  - '<strong>박용화</strong>, 박대희, Simeneh Semegne Gulat, "ELECTRONIC APPARATUS AND METHOD FOR IDENTIFYING FALSE DETECTION OF OBJECT BY REFLECTION IN INDOOR ENVIRONMENT", Pat.No. 3772701 (2024.05.01), 유럽'
+  - '<strong>박용화</strong>, 남현욱, 김성후, 민덕기, 서호준, "다중채널 음향 및 진동신호 딥러닝 기반 전차 동력장치 고장진단체계", Pat.No. 10-2647161-0000 (2024.03.08), 대한민국'
+  - '<strong>박용화</strong>, 김준호, 정원호, 김재완, 양찬승, "전동기 상태 진단 방법 및 장치", App.No. 10-2025-0147472 (2025.10.14), 대한민국'
+
+# 학위논문 (M.S. Thesis / Ph.D. Dissertation 탭에서 사용)
+ms_thesis:
+  - '물리 지식 기반 심층 연산자 신경망을 이용한 다양한 구조변수에 대한 구조물의 모드 해석 (PI-Deep Operator Network based Structural Modal Analysis for Various Structural Parameters), 장강민 (2026)'
+  - '광각 카메라-프로젝터 시스템의 정밀 3D 계측을 위한 Generic 캘리브레이션 (Generic calibration of wide-FOV camera-projector system for precision 3D measurement), 조만희 (2026)'
+  - '모듈화된 맥파 전달 특성을 이용한 물리지식기반 PPG-중심동맥압 추정 네트워크 (Physics-Informed PPG-to-Central Blood Pressure Estimation Network Using Modular Blood Pressure Transmission Characteristics), 송현우 (2026)'
+  - '디퓨전 모델을 이용한 간접 ToF 센서 깊이 이미지의 외광 노이즈 제거 (Ambient Light Noise Suppression in Depth Image of Indirect Time-of-Flight Sensors Using a Diffusion Model), 안석준 (2025)'
+  - '빔포밍 어레이를 이용해 학습된 영상 기반 음원 위치 및 강도 맵 추정 방법 (Image-based Sound Source Localization and Intensity Map Estimation Method Trained Using a Beamforming Array), 김진 (2025)'
+
+phd_dissertation:
+  - 'PPG 신호 기반 혈관 건강 모니터링 방법 및 심혈관계 시뮬레이터와 전이학습을 이용한 임상 데이터 적용 (PPG Signal-based Vascular Health Monitoring Method and Its Application to Clinical Data Using Cardiovascular Simulator and Transfer Learning), 이보미 (2026)'
+  - '스테레오 비전 기반 대규모 구조물의 3차원 고정밀 계측 방법에 관한 연구 (High-precision 3D Measurement Method for Large-Scale Structures Based on Stereo Vision), 김정민 (2026)'
+  - '고정밀도 디지털 트윈 구현을 위한 센서 배치 및 자유도 확장 기법 (Sensor Placement and DOF Expansion Methods for the Realization of a High-Precision Digital Twin), 박강재 (2025)'
+  - '적합일반화분해 및 심층연산자신경망 기반 생성형 모델을 활용한 동적시스템의 상태 모니터링 (Proper Generalized Decomposition and DeepONet-based Generative Model for Condition Monitoring of Dynamical Systems), 임대근 (2025)'
+  - '음향 이벤트 검출을 위한 주파수 동적 컨볼루션 (Frequency Dynamic Convolutions for Sound Event Detection), 남현욱 (2025)'
+  - '귀 이미지를 이용한 딥러닝 기반 머리전달함수 개인화 및 음원 방향 추정에 적용 (DNN-based HRTF Individualization Utilizing Pinna Images for Accurate Sound Source Localization), 고병윤 (2025)'

@@ -1,0 +1,104 @@
+---
+layout: default
+---
+<div class="wrap" id="content">
+
+  <div class="visual">
+    <div class="visual-slot">메인 비주얼 영역 — 이미지를 <code>assets/img/main/</code> 에 올려 교체하세요 (984 × 353)</div>
+  </div>
+
+  <div class="main-cols">
+
+    <div class="main-col">
+      <div class="box-head">
+        <div>
+          <span class="eyebrow">Human Lab</span>
+          <h2><em>N</em>EWS &amp; <em>A</em>RTICLE</h2>
+        </div>
+        <a href="{{ '/awards/' | relative_url }}" class="more-btn" aria-label="NEWS 더보기">+</a>
+      </div>
+      <ul class="main-list">
+        {%- assign news = site.news | sort: "date" | reverse -%}
+        {%- for p in news limit: 5 -%}
+        <li><span class="num">{{ forloop.index }}.</span><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
+        {%- else -%}
+        <li><span class="num">·</span>등록된 게시물이 없습니다.</li>
+        {%- endfor -%}
+      </ul>
+    </div>
+
+    <div class="main-col">
+      <div class="box-head">
+        <div>
+          <span class="eyebrow">Human Lab</span>
+          <h2><em>N</em>OTICE</h2>
+        </div>
+        <a href="{{ '/notice/' | relative_url }}" class="more-btn" aria-label="NOTICE 더보기">+</a>
+      </div>
+      <ul class="main-list">
+        {%- assign notice = site.notice | sort: "date" | reverse -%}
+        {%- for p in notice limit: 5 -%}
+        <li><span class="num">{{ forloop.index }}.</span><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
+        {%- else -%}
+        <li><span class="num">·</span>등록된 게시물이 없습니다.</li>
+        {%- endfor -%}
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="main-sec-head">
+    <h2><em>P</em>UBLICATION</h2>
+  </div>
+
+  {%- assign groups = "international_journal|International Journal,international_conference|International Conference,domestic_journal|Domestic Journal,domestic_conference|Domestic Conference,patents|Patents,ms_thesis|Master Thesis,phd_dissertation|Ph.D. Dissertation" | split: "," -%}
+
+  <ul class="pub-tabs" id="main-pub-tabs">
+    {%- for g in groups -%}
+    {%- assign kv = g | split: "|" -%}
+    <li class="{% if forloop.first %}on{% endif %}" data-key="{{ kv[0] }}"><a href="#" onclick="return false;">{{ kv[1] }}</a></li>
+    {%- endfor -%}
+  </ul>
+
+  {%- for g in groups -%}
+  {%- assign kv = g | split: "|" -%}
+  {%- assign gkey = kv[0] -%}
+  <ul class="pub-list main-pub-panel" data-key="{{ gkey }}" {% unless forloop.first %}style="display:none"{% endunless %}>
+    {%- assign entries = site.data.publications[gkey] -%}
+    {%- for e in entries limit: 5 -%}
+    <li>{{ e }}</li>
+    {%- else -%}
+    <li style="text-align:center;">등록된 항목이 없습니다.</li>
+    {%- endfor -%}
+  </ul>
+  {%- endfor -%}
+
+  <div class="main-sec-head">
+    <h2><em>G</em>ALLERY</h2>
+  </div>
+  <ul class="main-list" style="padding-bottom:40px;">
+    {%- assign gal = site.gallery | sort: "date" | reverse -%}
+    {%- for p in gal limit: 4 -%}
+    <li><span class="num">·</span><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
+    {%- else -%}
+    <li><span class="num">·</span>등록된 게시물이 없습니다.</li>
+    {%- endfor -%}
+  </ul>
+
+</div>
+
+<script>
+(function () {
+  var tabs = document.querySelectorAll('#main-pub-tabs li');
+  var panels = document.querySelectorAll('.main-pub-panel');
+  tabs.forEach(function (t) {
+    t.addEventListener('click', function () {
+      tabs.forEach(function (x) { x.classList.remove('on'); });
+      t.classList.add('on');
+      panels.forEach(function (p) {
+        p.style.display = (p.dataset.key === t.dataset.key) ? '' : 'none';
+      });
+    });
+  });
+})();
+</script>

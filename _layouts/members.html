@@ -1,0 +1,43 @@
+---
+layout: page
+---
+{%- assign list = site.data.members[page.group] -%}
+
+{%- if list and list.size > 0 -%}
+  {%- for m in list -%}
+  <div class="member">
+    <div class="photo-slot">PHOTO</div>
+    <div class="member-info">
+      <div class="member-name">{{ m.name }}</div>
+      <dl>
+        <dt>Position</dt>
+        <dd>{{ m.position }}</dd>
+      </dl>
+      {%- if m.education -%}
+      <dl>
+        <dt>Education</dt>
+        <dd>
+          {%- for e in m.education -%}{{ e }}{% unless forloop.last %}<br>{% endunless %}{%- endfor -%}
+        </dd>
+      </dl>
+      {%- endif -%}
+      {%- if m.interest -%}
+      <dl><dt>Research Interest</dt><dd>{{ m.interest }}</dd></dl>
+      {%- endif -%}
+      {%- if m.hobby -%}
+      <dl><dt>Hobby</dt><dd>{{ m.hobby }}</dd></dl>
+      {%- endif -%}
+      {%- if m.email -%}
+      <dl><dt>Email</dt><dd><a class="link" href="mailto:{{ m.email }}">{{ m.email }}</a></dd></dl>
+      {%- endif -%}
+      {%- if m.note -%}
+      <dl><dt>Note</dt><dd>{{ m.note }}</dd></dl>
+      {%- endif -%}
+    </div>
+  </div>
+  {%- endfor -%}
+{%- else -%}
+  <p style="padding:50px 0;text-align:center;">등록된 구성원이 없습니다. <code>_data/members.yml</code> 의 <code>{{ page.group }}</code> 항목에 추가하세요.</p>
+{%- endif -%}
+
+{{ content }}

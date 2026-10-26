@@ -1,0 +1,44 @@
+<div class="header">
+  <div class="wrap">
+
+    <a href="{{ '/' | relative_url }}" class="logo">
+      <span class="logo-kaist">KAIST</span>
+      <span class="logo-text">
+        <span class="l1">HUMAN LAB</span>
+        <span class="l2"><em>H</em>uman-<em>M</em>achine i<em>N</em>teraction</span>
+      </span>
+    </a>
+
+    <span class="since">Since {{ site.lab.since }}</span>
+
+    <div class="util">
+      <div class="util-link">
+        <a href="{{ '/' | relative_url }}">HOME</a>
+      </div>
+      <div class="counter">
+        <span>Today : <b id="cnt-today">-</b></span>
+        <span>Total : <b id="cnt-total">-</b></span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="tm_box">
+  <div class="wrap">
+    <ul class="tm">
+      {% for tab in site.data.nav %}
+      <li class="{% if page.tab == tab.title %}on{% endif %}">
+        <a href="{{ tab.url | relative_url }}">{{ tab.title }}</a>
+        {% if tab.items %}
+        <ul class="sub">
+          {% for item in tab.items %}
+          <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

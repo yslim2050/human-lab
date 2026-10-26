@@ -1,0 +1,50 @@
+# ───────────────────────────────────────────────────────────
+# 구성원 명단. 그룹별로 항목을 추가/수정하세요.
+# 사용 가능한 필드: name, position, education(목록), interest, hobby, email, note
+# 사진은 추후 assets/img/members/ 에 올리고 레이아웃에서 연결하면 됩니다.
+# ───────────────────────────────────────────────────────────
+
+professor:
+  - name: "YONG-HWA PARK, Ph.D (박용화)"
+    position: "Associate Professor, Human-Machine iNteraction LAB (HUMAN lab)"
+    education:
+      - "Department of Mechanical Engineering, KAIST"
+      - "291 Daehak-ro, Yuseong-gu, Daejeon 34141, Korea"
+    interest: "Vibration Modeling/Analysis, Acoustic Event Recognition, Biometric Recognition by Human Body Vibration, 3D Shape and Motion Measurement"
+    email: "yhpark@kaist.ac.kr"
+    note: "Office : +82-42-350-3235, Mobile : +82-10-3326-7337"
+
+researcher:
+  - name: "Rismaya Kumar Mishra"
+    position: "Post-doctoral Researcher"
+    education:
+      - "2016 B.Tech Mechanical Engineering, Biju Patnaik University of Technology, India"
+      - "2019 M.Tech Mechanical Engineering, National Institute of Technology (NIT) Srinagar, India"
+      - "2025 Ph.D Centre for Automotive Research and Tribology, Indian Institute of Technology (IIT) Delhi, India"
+    interest: "Condition Monitoring, Noise &amp; Vibration and Harshness (NVH), Optimization, Generative AI, Applied Machine Learning"
+    hobby: "Playing cricket, Motorcycle touring"
+    email: "rkmishra@kaist.ac.kr"
+
+  - name: "김정민 (Kim, Jeong Min)"
+    position: "Post-doctoral Researcher"
+    education:
+      - "2019 BS Mechanical Engineering, KAIST"
+      - "2021 MS Mechanical Engineering, KAIST"
+      - "2026 PhD Mechanical Engineering, KAIST"
+    interest: "3D Vision Recognition"
+    hobby: "Soccer"
+    email: "jmink0304@kaist.ac.kr"
+
+  - name: "Hussain Altaf"
+    position: "Post-doctoral Researcher"
+    education:
+      - "2015 Bachelor's in Computer Science, Institute of Management Sciences, Peshawar, Pakistan"
+      - "2020 M.S. in Computer Science, Islamia College University, Pakistan"
+
+phd: []
+
+master: []
+
+alumni: []
+
+staff: []

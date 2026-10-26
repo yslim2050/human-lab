@@ -1,0 +1,25 @@
+{%- assign cur = nil -%}
+{%- for tab in site.data.nav -%}
+  {%- if tab.title == page.tab -%}{%- assign cur = tab -%}{%- endif -%}
+{%- endfor -%}
+
+{%- if cur and cur.items -%}
+<div class="lnb">
+  <div class="lnb-head">{{ cur.title }}</div>
+  <ul class="lnb-list">
+    {%- for item in cur.items -%}
+    {%- assign full = item.url | relative_url -%}
+    <li class="{% if page.url == item.url or page.lnb == item.title %}on{% endif %}">
+      <a href="{{ full }}">{{ item.title }}</a>
+    </li>
+    {%- endfor -%}
+  </ul>
+</div>
+{%- else -%}
+<div class="lnb">
+  <div class="lnb-head">{{ page.tab }}</div>
+  <ul class="lnb-list">
+    <li class="on"><a href="{{ page.url | relative_url }}">{{ page.title }}</a></li>
+  </ul>
+</div>
+{%- endif -%}
