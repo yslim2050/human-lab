@@ -132,7 +132,10 @@ table { border-collapse: collapse; border-spacing: 0; width: 100%; }
   height: 65px; display: flex; align-items: center;
   padding: 15px 25px; color: var(--white);
   font-size: 25px; font-weight: 700; line-height: 1;
-  background: linear-gradient(100deg, var(--blue-sub) 0%, var(--blue-sub-2) 60%, var(--blue-sub) 100%);
+  background-color: var(--blue-sub);
+  background-image: url("../img/sub/submenu-bg.svg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 .lnb-list > li { border-bottom: 1px solid var(--border-e9); }
 .lnb-list > li > a {
